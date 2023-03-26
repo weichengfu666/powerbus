@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: wei wei, wei, LIC=X96CK-ZJF8V-QDZKD-88LGJ-9IMF4-S55S2
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\sofeware\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\17830\Desktop\工作\程序\32主机程序\串口和PC机通信（串口中断、FIFO机制）\Project\MDK-ARM(uV4)\project.uvprojx
+Project File Date:  03/26/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\sofeware\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Flash'
+assembling startup_stm32f10x_md.s...
+compiling bsp.c...
+compiling main.c...
+..\..\User\app\src\main.c(50): warning:  #128-D: loop is not reachable
+  	while (1)
+..\..\User\app\src\main.c(80): warning:  #177-D: function "PrintfHelp"  was declared but never referenced
+  static void PrintfHelp(void)
+..\..\User\app\src\main.c: 2 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling bsp_led.c...
+compiling bsp_uart_fifo.c...
+compiling stm32f10x_assert.c...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling system_stm32f10x.c...
+compiling bsp_timer.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+linking...
+Program Size: Code=5200 RO-data=268 RW-data=76 ZI-data=3164  
+FromELF: creating hex file...
+After Build - User command #1: CopyHex_Flash.bat
+C:\Users\17830\Desktop\工作\程序\32主机程序\串口和PC机通信（串口中断、FIFO机制）\Project\MDK-ARM(uV4)>copy Flash\Obj\output.hex ..\output(mdk).hex 
+已复制         1 个文件。
+".\Flash\Obj\output.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Flash
+  C:\Users\17830\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\17830\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

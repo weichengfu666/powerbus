@@ -1,0 +1,19 @@
+--cpu Cortex-M3
+".\flash\obj\main.o"
+".\flash\obj\bsp_led.o"
+".\flash\obj\bsp_timer.o"
+".\flash\obj\bsp.o"
+".\flash\obj\stm32f10x_it.o"
+".\flash\obj\stm32f10x_assert.o"
+".\flash\obj\bsp_uart_fifo.o"
+".\flash\obj\startup_stm32f10x_md.o"
+".\flash\obj\stm32f10x_gpio.o"
+".\flash\obj\stm32f10x_rcc.o"
+".\flash\obj\misc.o"
+".\flash\obj\stm32f10x_tim.o"
+".\flash\obj\stm32f10x_usart.o"
+".\flash\obj\system_stm32f10x.o"
+--library_type=microlib --strict --scatter ".\Flash\Obj\output.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Flash\List\output.map" -o .\Flash\Obj\output.axf
